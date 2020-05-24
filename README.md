@@ -31,56 +31,59 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 Request for verifyUser:
-{
-    "username":"9889878672"
-}
+
+	{
+		"username":"9889878672"
+	}
 
 
 response of verifyUser:
-{
-"isRegistred":true
-}
 
-request to Authentication
-{
-    "username":"9889878672",
-    "password":"",
-    "OTP":9087
-}
+	{
+	"isRegistred":true
+	}
+
+request to Authentication:
+
+	{
+		"username":"9889878672",
+		"password":"",
+		"OTP":9087
+	}
 
 reponse to Authentication:
 
-{
-    userprofile:{
-        "userId":"10001"
-        "firstname":"jhon",
-        "lastname":"deo",
-        "mobile":"9878675653",
-        "email":"example@google.com",
-        "location":"hyderabad",
-        "thumbnail":"couldcnd.com/jsdhjj/jsdjsgghgh.jpg"
-        "preferences":{
-            "notifications":false,
-            "showrecentViewed":true,
-            "chatToEveryone":true,
-            "callToEveryone":true
-        },
-        "notifications":[
-            {
-                "id":"01",
-                "isRead":true,
-                "message":"some message"
-            },
-            {
-                "id":"02",
-                "isRead":false,
-                "message":"some other message"
-            }
-        ],
-        "isUserVerified":true,
-        "feedbackStats":3
-    }
-}
+	{
+		userprofile:{
+			"userId":"10001"
+			"firstname":"jhon",
+			"lastname":"deo",
+			"mobile":"9878675653",
+			"email":"example@google.com",
+			"location":"hyderabad",
+			"thumbnail":"couldcnd.com/jsdhjj/jsdjsgghgh.jpg"
+			"preferences":{
+				"notifications":false,
+				"showrecentViewed":true,
+				"chatToEveryone":true,
+				"callToEveryone":true
+			},
+			"notifications":[
+				{
+					"id":"01",
+					"isRead":true,
+					"message":"some message"
+				},
+				{
+					"id":"02",
+					"isRead":false,
+					"message":"some other message"
+				}
+			],
+			"isUserVerified":true,
+			"feedbackStats":3
+		}
+	}
 
 
 Edit user Profile:
@@ -100,6 +103,7 @@ request for Change Profile:
     }
 
 response for Change Profile:
+
     {
     "success":true,    
     "userprofile":{
